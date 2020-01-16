@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.28 sec <<< FAILURE! - in TestSuite
+feature(shoeSearchTestRunner.TestRunner)  Time elapsed: 12.499 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.ClassCastException: com.sun.proxy.$Proxy16 cannot be cast to org.openqa.selenium.By
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at shoeSearchTestRunner.TestRunner.feature(TestRunner.java:27)
+Caused by: java.lang.ClassCastException: com.sun.proxy.$Proxy16 cannot be cast to org.openqa.selenium.By
+	at shoeSearchPage.BasePage.clickOn(BasePage.java:14)
+	at shoeSearchPage.ShoeSearchPage.clickOnsearchButton(ShoeSearchPage.java:31)
+	at stepdefinition.ShoeSearchStep.click_on_search_button(ShoeSearchStep.java:34)
+	at ✽.When Click on search button(shoeSearch.feature:5)
+

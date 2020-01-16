@@ -1,0 +1,92 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Shoe search possitive scenarios",
+        "description": "",
+        "id": "shoe-search-validations;shoe-search-possitive-scenarios",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8783972934,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open Chrome Browser with url",
+            "match": {
+              "location": "ShoeSearchStep.open_Chrome_Browser_with_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5455829,
+              "error_message": "java.lang.NullPointerException\n\tat java.util.Objects.requireNonNull(Objects.java:203)\n\tat org.openqa.selenium.interactions.Actions.\u003cinit\u003e(Actions.java:66)\n\tat shoeSearchPage.ShoeSearchPage.clickOnsearchButton(ShoeSearchPage.java:28)\n\tat stepdefinition.ShoeSearchStep.click_on_search_button(ShoeSearchStep.java:34)\n\tat ✽.When Click on search button(shoeSearch.feature:5)\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "Click on search button",
+            "match": {
+              "location": "ShoeSearchStep.click_on_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Select \"\u003cAcron\u003e\" from list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cAcron\u003e",
+                  "offset": 8
+                }
+              ],
+              "location": "ShoeSearchStep.select_from_list(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Click on search",
+            "match": {
+              "location": "ShoeSearchStep.click_on_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Validate Acron\u0027s shoes",
+            "match": {
+              "location": "ShoeSearchStep.validate_Acron_s_shoes()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Shoe search validations",
+    "description": "",
+    "id": "shoe-search-validations",
+    "keyword": "Feature",
+    "uri": "shoeSearch.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Regression"
+      }
+    ]
+  }
+]
